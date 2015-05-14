@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home</title>
+    </head>
+    <body>
+        <form action="/Servlet/mathit" method="POST">
+            <h1>Подчитать общую сумму!</h1>
+
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td align="right">Ваше имя:</td>
+                                <td><input type="text" name="name"/></td>
+                            </tr>
+                            <tr>
+                                <td align="right">Введите 1-число:</td>
+                                <td><input type="text" name="value1"/></td>
+                            </tr>
+                            <tr>
+                                <td align="right">Введите 2-число:</td>
+                                <td><input type="text" name="value2"/></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="submit" value="Подчитать"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
